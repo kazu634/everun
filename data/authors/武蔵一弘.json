@@ -1,0 +1,15 @@
+{
+    "name": "武蔵一弘",
+    "image" : "img/musashi.png",
+    "bio": "2008年に文学部に入学しました。大学院の修士で卒業したので、6-7年ほどイブランにはお世話になりました。今はIT系の会社に勤めています。",
+    "social": [
+        { "link": "https://blog.kazu634.com/" },
+        { "twitter": "https://twitter.com/MusashiKazuhiro" },
+        { "facebook": "https://facebook.com/kazu634" },
+        { "linkedin": "https://linkedin.com/in/一弘-武蔵-b90bba54" },
+        { "github": "https://github.com/kazu634" },
+        { "link": "https://www.strava.com/athletes/89291248" },
+        { "flickr": "https://www.flickr.com/photos/42332031@N02/" },
+        { "foursquare": "https://foursquare.com/musashikazuhiro" }
+    ]
+}

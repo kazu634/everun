@@ -1,0 +1,10 @@
+{
+    "name": "管理人",
+    "image" : "img/logo.jpg",
+    "bio": "東北大学の有志によるランニングサークルです。陸上部とは違い、そこまで本気にならずに、好きなペースで、好きな距離を走るサークルです。",
+    "social": [
+        { "twitter": "https://twitter.com/everun1989" },
+        { "facebook": "https://facebook.com/groups/everun" },
+        { "instagram": "https://foursquare.com/everun1989" }
+    ]
+}
