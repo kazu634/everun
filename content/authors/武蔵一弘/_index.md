@@ -20,7 +20,7 @@ title: 武蔵一弘
         <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://github.com/kazu634" target="_blank"
           aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{< icon "github" >}}</a>
         <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://www.strava.com/athletes/89291248" target="_blank"
-          aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{< icon "link" >}}</a>
+          aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{< icon "strava" >}}</a>
         <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://www.flickr.com/photos/42332031@N02/" target="_blank"
           aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{< icon "flickr" >}}</a>
         <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://foursquare.com/musashikazuhiro" target="_blank"
