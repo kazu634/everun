@@ -1,0 +1,104 @@
+kind: pipeline
+type: docker
+name: production
+
+steps:
+  - name: submodules
+    image: alpine/git
+    commands:
+    - apk add git-lfs
+    - git submodule update --init --recursive
+    - git lfs pull
+
+  - name: hugo
+    image: cibuilds/hugo:0.106
+    commands:
+      - sudo hugo -e production --minify -v -s .
+
+  - name: Compress-the-Assets
+    image: alpine:3.9
+    commands:
+      - find public/ -type f | egrep "\.(css|js|png|jpg|html|JPG|PNG|CSS|JS|HTML)$" | xargs -n 1 -i% -P 0 sh -c 'cp % %.bk && gzip % && mv %.bk %'
+
+  - name: housekeep
+    image: appleboy/drone-ssh
+    settings:
+      host: 10.0.1.166
+      username: webadm
+      port: 10022
+      key:
+        from_secret: ssh_key
+      script:
+        - rm -rf /var/www/everun/*
+        - rm -rf /home/webadm/works/public/*
+
+  - name: scp
+    image: appleboy/drone-scp
+    settings:
+      host: 10.0.1.166
+      username: webadm
+      port: 10022
+      target:
+        - /var/www/everun
+        - /home/webadm/works/public
+      source: public/
+      key:
+        from_secret: ssh_key
+      overwrite: true
+      strip_components: 1
+
+trigger:
+  branch:
+  - master
+
+---
+kind: pipeline
+type: docker
+name: staging
+
+steps:
+  - name: submodules
+    image: alpine/git
+    commands:
+    - apk add git-lfs
+    - git submodule update --init --recursive
+    - git lfs pull
+
+  - name: hugo
+    image: cibuilds/hugo:0.106
+    commands:
+      - sudo hugo -e staging --minify -v -s  .
+
+  - name: Compress-the-Assets
+    image: alpine:3.9
+    commands:
+      - find public/ -type f | egrep "\.(css|js|png|jpg|html|JPG|PNG|CSS|JS|HTML)$" | xargs -n 1 -i% -P 0 sh -c 'cp % %.bk && gzip % && mv %.bk %'
+
+  - name: housekeep
+    image: appleboy/drone-ssh
+    settings:
+      host: 10.0.1.166
+      username: webadm
+      port: 10022
+      key:
+        from_secret: ssh_key
+      script:
+        - rm -rf /var/www/test-everun/*
+
+  - name: scp
+    image: appleboy/drone-scp
+    settings:
+      host: 10.0.1.166
+      username: webadm
+      port: 10022
+      target: /var/www/test-everun
+      source: public/
+      key:
+        from_secret: ssh_key
+      overwrite: true
+      strip_components: 1
+
+trigger:
+  branch:
+    exclude:
+    - master
