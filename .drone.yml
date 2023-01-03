@@ -6,7 +6,9 @@ steps:
   - name: submodules
     image: alpine/git
     commands:
+    - apk add git-lfs
     - git submodule update --init --recursive
+    - git lfs pull
 
   - name: hugo
     image: cibuilds/hugo:0.106
@@ -58,7 +60,9 @@ steps:
   - name: submodules
     image: alpine/git
     commands:
+    - apk add git-lfs
     - git submodule update --init --recursive
+    - git lfs pull
 
   - name: hugo
     image: cibuilds/hugo:0.106
