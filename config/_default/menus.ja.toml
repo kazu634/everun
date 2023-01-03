@@ -26,9 +26,9 @@
   weight = 30
 
 [[main]]
-  name = "執筆者"
-  pageRef = "authors"
-  weight = 50
+  name = "トピック"
+  pageRef = "topics"
+  weight = 40
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
