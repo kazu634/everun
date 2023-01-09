@@ -30,6 +30,11 @@
   pageRef = "topics"
   weight = 40
 
+[[main]]
+  name = "記事の投稿"
+  url = "https://everun1989.microcms.io/"
+  weight = 50
+
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
