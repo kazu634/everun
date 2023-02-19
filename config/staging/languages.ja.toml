@@ -21,4 +21,5 @@ dateFormat = "2006-01-02"
     { twitter = "https://twitter.com/everun1989" },
     { facebook = "https://www.facebook.com/groups/everun/" },
     { instagram = "https://instagram.com/everun1982" },
+    { email = "mailto:info@everun.club" },
   ]
