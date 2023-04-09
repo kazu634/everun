@@ -18,6 +18,7 @@ dateFormat = "2006-01-02"
   headline = "現役メンバーを募集中！我こそはという人はご連絡ください！"
   bio = "東北大学の有志によるランニングサークルです。陸上部とは違い、そこまで本気にならずに、好きなペースで、好きな距離を走るサークルです。"
   links = [
+    { strava = "https://www.strava.com/clubs/everun" },
     { twitter = "https://twitter.com/everun1989" },
     { facebook = "https://www.facebook.com/groups/everun/" },
     { instagram = "https://instagram.com/everun1982" },
