@@ -11,7 +11,7 @@ steps:
     - git lfs pull
 
   - name: hugo
-    image: cibuilds/hugo:0.106
+    image: cibuilds/hugo:0.115.4
     commands:
       - sudo hugo -e production --minify -v -s .
 
@@ -65,7 +65,7 @@ steps:
     - git lfs pull
 
   - name: hugo
-    image: cibuilds/hugo:0.106
+    image: cibuilds/hugo:0.115.4
     commands:
       - sudo hugo -e staging --minify -v -s  .
 
