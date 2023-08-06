@@ -7,7 +7,7 @@ authors:
   - "管理人"
 ---
 
-管理人です。OB, OG有志にて`Strava`を利用し始めたので、活動報告を今月からし始めようと思います。イブランのStravaグループ、誰でも参加できるようになっていますので、興味ある現役生の方はぜひ参加してみてください！
+管理人です。OB, OG有志にて`Strava`を利用し始めたので、`Strava`のデータから7月の活動をまとめてみます。イブランのStravaグループ、誰でも参加できるようになっていますので、興味ある現役生の方はぜひ参加してみてください！
 
 <iframe allowtransparency frameborder='0' height='160' scrolling='no' src='https://www.strava.com/clubs/1124508/latest-rides/105e28b4242f413d3b66e18cef4f66144b4ae5fa?show_rides=false' width='300'></iframe>
 
