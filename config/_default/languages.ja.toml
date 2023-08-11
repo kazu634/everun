@@ -1,16 +1,18 @@
 languageCode = "ja"
 languageName = "Japanese"
-displayName = "日本語"
-isoCode = "ja"
 weight = 1
-rtl = false
 
 title = "EveRun since 1989"
-logo = "img/logo.jpg"
-description = "東北大学のランニングサークル・イブランのホームページです"
 # copyright = "Copy, _right?_ :thinking_face:"
 
+
+[languages.ja.params]
+logo = "img/logo.jpg"
+description = "東北大学のランニングサークル・イブランのホームページです"
+displayName = "日本語"
+isoCode = "ja"
 dateFormat = "2006-01-02"
+rtl = false
 
 [author]
   name = "東北大学ランニングサークル・イブラン"
