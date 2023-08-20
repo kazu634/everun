@@ -40,7 +40,7 @@ steps:
       port: 10022
       target:
         - /var/www/everun
-        - /home/webadm/works/public
+        - /home/webadm/works/everun
       source: public/
       key:
         from_secret: ssh_key
