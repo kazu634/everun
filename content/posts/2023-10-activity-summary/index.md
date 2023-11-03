@@ -11,9 +11,7 @@ authors:
 
 ![Image](https://farm66.staticflickr.com/65535/53259432663_4791a5fec9_c.jpg)
 
-さて、いつものようにOB, OG有志にて`Strava`を利用し始めたので、10月の活動報告をしようと思います。イブランのStravaグループ、誰でも参加できるようになっていますので、興味ある現役生の方はぜひ参加してみてください！
-
-<iframe allowtransparency frameborder='0' height='160' scrolling='no' src='https://www.strava.com/clubs/1124508/latest-rides/105e28b4242f413d3b66e18cef4f66144b4ae5fa?show_rides=false' width='300'></iframe>
+さて、いつものようにOB, OG有志にて`Strava`を利用し始めたので、10月の活動報告をしようと思います。
 
 ## Stravaの記録で振り返る10月
 [Strava](https://www.strava.com/clubs/1124508/latest-rides/105e28b4242f413d3b66e18cef4f66144b4ae5fa?show_rides=false)の記録をグラフ化すると、このようになりました。
@@ -69,12 +67,12 @@ options: {
 {{< /chart >}}
 
 ### 種別ごとの集計
-運動種別ごとの割合はこちらです。Gotoさんがコツコツとランニングの距離を稼いでいるのがわかる結果かとおもいます。
+運動種別ごとの割合はこちらです。Musashiさんのサイクリングが目立っていますが、Gotoさんがコツコツとランニングの距離を稼いでいることに注目すべきと思います！
 
 {{< chart >}}
 type: 'doughnut',
 data: {
-  labels: ['Run', 'Ride', 'Walk', 'Swim'],
+  labels: ['ランニング', 'サイクリング', 'ウォーキング', 'スイミング'],
   datasets: [
     {
       label: '距離(km)',
@@ -86,4 +84,6 @@ data: {
 
 ### まとめ
 イブランのStravaグループ、誰でも参加できるようになっていますので、興味ある現役生の方はぜひ参加してみてください！
+
+<iframe allowtransparency frameborder='0' height='160' scrolling='no' src='https://www.strava.com/clubs/1124508/latest-rides/105e28b4242f413d3b66e18cef4f66144b4ae5fa?show_rides=false' width='300'></iframe>
 
